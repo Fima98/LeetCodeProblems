@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def isPalindrome(self, x):
         if x < 0:
             return False
@@ -14,9 +14,7 @@ class Solution(object):
 
     def isPalindromeStr(self, x):
         str_x = str(x)
-        if str_x == str_x[::-1]:
-            return True
-        return False
+        return str_x == str_x[::-1]
 
 
 if __name__ == "__main__":
